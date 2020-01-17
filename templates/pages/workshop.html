@@ -1,0 +1,42 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'app.js' %}"></script>
+<div id="video-container">
+    <video autoplay  muted loop  class="video">
+        <source src="{% static 'img/backvideo.mp4' %}" type="video/mp4">
+        </video>
+        
+          
+    <div class="contents">
+ <!-- WORKSHOP -->        
+        <div class="eventname">Workshop <br> (artificial intelligence using robotics) </div> 
+        
+        <div class="headings"><b> Description</b> </div>
+        
+        <div class="text"> Its all about the combinations of Artificial Intelligence and Robotics that has been emerging as the huge potential in future technologies  </div>
+        
+   
+        
+        
+        
+        <div class="headings"><b>fees</b></div>
+        <div class="text"> Rs.300</div>
+        <div class="text"> (Includes Registration, Food and Certification)</div>
+        
+        
+        <p class="quote"> " Do Register at the earliest and Grab the earlybird opportunity and enrich your knowledge "</p>
+        
+        <div class="headings"><b>Event coordinator</b> </div>
+        <div class="text"> Rajesh : <a href="tel:7904040982">7904040982</a></div>
+        
+        
+        
+    </div>
+        
+        
+        
+    </div>
+
+
+{% endblock %}

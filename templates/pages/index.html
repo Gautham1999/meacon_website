@@ -1,0 +1,177 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'app.js' %}"></script>
+{% include 'partials/_alerts.html' %}
+<div class="mainpage" style="background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.74))),url({% static 'img/AIASIA.jpg' %});background-image:linear-gradient(rgba(0, 0, 0, 0.74) rgba(0, 0, 0, 0.75)),url({% static 'img/AIASIA.jpg' %});">
+  <h1 class="velammal"> VELAMMAL ENGINEERING COLLEGE</h1>
+  <h5 class="eie"> (an autonomous institution)</h5>
+  <div class="eie"> Department of Electronics and Instrumentation Engineering</div>
+  <div id="mea1"> MEACON-T20</div> 
+  <div class="main-buttons">
+        
+    <a href="{% url 'register' %}" class="buttonj"><i class="fa fa-handshake-o" aria-hidden="true"></i> Join Us </a>
+      
+    <a href="{% url 'offers' %}" class="buttonj"> Offers </a>
+      
+  </div>
+</div>
+
+<div class="container-fluid" id="Eventspane">
+<h1><b>Events</b></h1>
+  <div class="flip-card" data-aos="fade-up">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="{% static 'img/Adobe_Post_20200115_2017210.295485984551504.png' %}" alt="Avatar" style="width:280px;height:350px;">
+      </div>
+      <a href="{% url 'papertechrix' %}"><div class="flip-card-back">
+        <b>Paper Techrix:</b><br>
+        "Let your mind write the paper not your hands"<br><br>
+
+Here is an amazing opportunity to showcase your ideas on an unique and massive platform in  the form of well integrated and intriguing presentation. It strives to explore the inquisitiveness of young minds by giving their incredulous ideas in a definitive direction. <b>#MeaconT20</b>
+      </div></a>
+    </div>
+</div>
+
+ </a>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="{% static 'img/20200115_2124140.1433241852950039.png' %}" alt="Avatar" style="width:280px;height:350px;">
+    </div>
+    <a href="{% url 'projectcorner' %}"><div class="flip-card-back">
+    <b>Project Corner:</b><br>
+    Here is your dream come true platform to showcase your astonishing innovative projects <br>
+    Display ur innovation, get ur deserved recognition
+     <b>#MeaconT20</b>
+  </div></a>
+</div>
+</div>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="400">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="{% static 'img/20200115_2000130.22530342478697662.png' %}" alt="Avatar" style="width:280px;height:350px;">
+  </div>
+  <a href="{% url 'blackbox' %}"><div class="flip-card-back">
+    <b>BLACK BOX:</b><br>
+    We are glad to welcome you all to our event . In this event the black box plays a major role in deciding your fortune .This event is nothing lesser than a jolly and a funfilled ride where  you will come across with some technical stuffs. To seal the curse which gets ridden on you . You will have  to undergo  a series of quest..<b>#MeaconT20</b>
+  </div></a>
+</div>
+</div>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="600">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="{% static 'img/20200115_2003120.4649310738168798.png' %}" alt="Avatar" style="width:280px;height:350px;">
+  </div>
+  <a href="{% url 'retrofitzz' %}"><div class="flip-card-back">
+    <b>RETROFITZZ:</b><br>
+    "Are you bored of circuits ?"<br>
+Then you are our right pick , we have reformed the old syllabus with new fun elements. Come for fun and win exciting prizes!! <b>#MeaconT20</b>
+  </div></a>
+</div>
+</div>
+<div class="flip-card" data-aos="fade-up" >
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="{% static 'img/IMG-20200115-WA0106.jpg' %}" alt="Avatar" style="width:280px;height:350px;">
+    </div>
+    <a href="{% url 'mindopedias' %}"><div class="flip-card-back">
+      <b>MIND_O_PEDIAS:</b><br>
+      "It's the time to squeeze your brain"<br>
+
+MIND_O_PEDIA is a technical quiz game which pursuits trivial knowledge of questions and answers .This game event tends to bring your grey cells more attention.Further encourages  in academic excellence and also helps by learn  and earn you. <b>#MeaconT20</b>
+    </div></a>
+  </div>
+</div>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="{% static 'img/20200115_2304060.5968564673168877.png' %}" alt="Avatar" style="width:280px;height:350px;">
+    </div>
+    <a href="{% url 'workshop' %}"><div class="flip-card-back">
+      <b>WORKSHOP:</b><br>
+      Its all about the combinations of AI and Robotics that has been emerging as the huge potential to change the world.Do Register at the earliest and Grab the earlybird opportunity and enrich your knowledge. <b>#MeaconT20</b>
+    </div></a>
+  </div>
+</div>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="400">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="{% static 'img/Adobe_Post_20200115_1956510.7700271214793911.png' %}" alt="Avatar" style="width:280px;height:350px;">
+  </div>
+  <a href="{% url 'workshop' %}"><div class="flip-card-back">
+    <b>FUN-TASK-TIK:</b><br>
+    Who doesn't like having fun challenges? Get ready to discover fun at our event and get rewarded. So grab your friends and register quickly. Come, participate, enjoy and win exciting prizes. Hurry up because the clock is ticking!! <b>#MeaconT20</b>
+  </div></a>
+</div>
+</div>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="600">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="{% static 'img/triathlon.jpg' %}" alt="Avatar" style="width:280px;height:350px;">
+  </div>
+  <a href="{% url 'triathlon' %}"><div class="flip-card-back">
+    <b>TRIATHLON:</b><br>
+    This is not your usual triathlon. Here you can have your sporting rush along with lots of fun and there is no better way to have fun than as a team. Yes, it's a team triathlon with three sportingly entertaining events. So, make sure you are ready get your adrenaline pumped along with your friends and take home your cash prize.<b>#MeaconT20</b>
+  </div></a>
+</div>
+</div>
+<div class="flip-card" data-aos="fade-up" >
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="{% static 'img/IMG-20200115-WA0104.jpg' %}" alt="Avatar" style="width:280px;height:350px;">
+  </div>
+  <a href="{% url 'miraclebombshell' %}"><div class="flip-card-back">
+    <b>MIRACLE BOMBSHELL:</b><br>
+    It is an event with many surprise games, which makes you to remember your childhood memories. This event brings you unlimited joy and happiness in all the ways. These games trigger your mind and increase your concentration level.  Play with relaxed mind  and wonderful gifts are waiting for you <br>
+
+    HAVE FUN!<b>#MeaconT20</b>
+  </div></a>
+</div>
+</div>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="{% static 'img/pubg.jpg' %}" alt="Avatar" style="width:280px;height:350px;">
+  </div>
+  <a href="{% url 'warriorsunite' %}"><div class="flip-card-back">
+    <b>WARRIORS UNITE:</b><br>
+    A tournament like experience of the battle royale PUBG where you compete with your team for the chicken dinner.<b>#MeaconT20</b> 
+  </div></a>
+</div>
+</div>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="400">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="{% static 'img/Adobe_Post_20200115_2001070.9477818910603617.png' %}" alt="Avatar" style="width:280px;height:350px;">
+  </div>
+  <a href="{% url 'happysnapper' %}"><div class="flip-card-back">
+    <b>HAPPY SNAPPER:</b><br>
+     You create fondest memories through your photos but the thing is, only here your memories will be rewarded with cash prizes. So, come join us online and show off your artistic skills by sending us your best memories.<b>#MeaconT20</b> 
+  </div></a>
+</div>
+</div>
+<div class="flip-card" data-aos="fade-up" data-aos-delay="600">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="{% static 'img/Adobe_Post_20200115_2001170.40191064218530337.png' %}" alt="Avatar" style="width:280px;height:350px;">
+  </div>
+  <a href="{% url 'tagnwin' %}"><div class="flip-card-back">
+    <b>TAG AND WIN:</b><br>
+       It's super easy to enter this contest with your own Instagram  account.All you have to do is to follow some simple steps.Stand a chance to win the cashprize of Rs1000.
+      <br>GOODLUCK EVERYONE<br>
+      HAPPY TAGGING !!!!!</span><b>#MeaconT20</b> 
+  </div></a>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<h1 align="center"><b>Sponsors:</b></h1>
+<div class="container">
+  <img src="{% static 'img/sundaram-home-page-001.jpg' %}" alt="" width="300" height="300">
+  <img src="{% static 'img/claw.png' %}" alt="" width="300" height="300">
+  <img src="{% static 'img/UNIQ_Logo.jpg' %}" alt="" width="300" height="100">
+</div>
+
+</div>
+{% endblock %}

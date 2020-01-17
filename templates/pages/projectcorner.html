@@ -1,0 +1,42 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'app.js' %}"></script>
+<div id="video-container">
+    <video autoplay  muted loop  class="video">
+        <source src="{% static 'img/backvideo.mp4' %}" type="video/mp4">
+        </video>
+        
+        
+  
+    <div class="contents">
+ <!-- PROJECT CORNER -->        
+        <div class="eventname">Project corner</div> 
+        
+        <div class="headings"><b> topic</b> </div>
+        
+        <div class="text"> Projects can be based on your innovative ideas or improving the existing one. Any domain can be accepted</div>
+        
+        <div class="headings"><b>Rules</b></div>
+        
+        <div class="text"> * Maximum 2 or 3 members per team</div>
+        <div class="text"> * Judgement is based on the project output and your explanation </div>
+       
+        
+        <div class="headings"><b>prize amount</b></div>
+        <div class="text">1st Prize - Rs.1000</div>
+        <div class="text">2nd Prize - Rs.500</div>
+        
+                    
+        <div class="headings"><b>Event coordinator</b> </div>
+        <div class="text"> Pon Aravind Raj : <a href="tel:9962144074">9962144074</a></div>
+        
+        
+        
+    </div>
+        
+        
+        
+    </div>
+
+{% endblock %}

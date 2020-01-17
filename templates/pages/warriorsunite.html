@@ -1,0 +1,45 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% block content %}
+
+<script src="{% static 'app.js' %}"></script>
+
+
+<div id="video-container">
+    <video autoplay  muted loop  class="video">
+        <source src="{% static 'img/backvideo.mp4' %}" type="video/mp4">
+        </video>
+        
+        
+ 
+    <div class="contents">
+ <!-- WARRIERS UNITE -->        
+        <div class="eventname">warriors Unite </div> 
+        
+        <div class="headings"><b> Rounds</b> </div>
+        
+        <div class="text"> Round -1 : ERANGEL <br> Round -2 : SANHOK <br> Round -3 : ERANGEL  </div>
+        
+        <div class="headings"><b> Event Description</b> </div>
+        
+       <div class="footer">" This tournament is for squards only and TPP mode. No emulators and Ipad/tablets allowed. All the participants must be present inside the avenue during all the rounds. the points will be allocated according to your position and skills " </div> 
+        
+        <div class="headings"><b>cash prize</b></div>
+        <div class="text"> Winner - Rs.1000</div>
+        <div class="text"> Runner - Rs.750</div>
+        <div class="text"> 2nd Runner up - Rs.500</div>
+        
+        
+        
+        
+        <div class="headings"><b>Event coordinator</b> </div>
+        <div class="text"> Aravind : <a href="tel:9940387844">9940387844</a></div>
+        
+        
+        
+    </div>
+        
+        
+        
+    </div>
+{% endblock %}

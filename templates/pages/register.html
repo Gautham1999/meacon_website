@@ -1,0 +1,42 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'app.js' %}"></script>
+<section>
+    {% include 'partials/_alerts.html' %}
+    <form action="{% url 'register' %}" method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="pwd">Name:</label>
+            <input type="text" class="form-control" name="name" id="pwd" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" name="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="college">College:</label>
+            <input type="text" class="form-control"  name="college" id="pwd" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Department(EIE/ECE/EEE/MECH/CIVIL/CSE/IT/Diploma/Others):</label>
+            <input type="text" class="form-control"  name="dept" id="pwd" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Mobile Number:</label><br>
+            <input type="tel" id="pwd" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Year:</label>
+            <input type="text" name="year" class="form-control" id="pwd" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Food:</label>
+              <input type="radio" name="Food" value="Veg">Veg</input>
+              <input type="radio" name="Food" value="Non-Veg">Non-Veg</input>
+          </div>
+          <p> Registration fee(Rs. 100) and workshop fee(Rs.300) will be collected onspot</p>
+          <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+</section>
+{% endblock %}

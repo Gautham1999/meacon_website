@@ -1,0 +1,43 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'app.js' %}"></script>
+<div id="video-container">
+    <video autoplay  muted loop  class="video">
+        <source src="{% static 'img/backvideo.mp4' %}" type="video/mp4">
+        </video>
+        
+        
+   
+    <div class="contents">
+ <!-- PAPER TECHRIX -->        
+        <div class="eventname">Happy Snapper </div> 
+     
+        <div class="headings"><b>Rules</b></div>
+        
+        <div class="text"> * Email us your favourite pic with it's back story </div>
+        <div class="text"> * Attach your Instagram ID in the mail </div>
+        <div class="text"> * Top 10 pictures will be selected based on likes</div>
+        <div class="text">* Top 10 Contestants will have to come to our campus on the day of our Symposium</div>
+        <div class="text"> * Top 3 will be awarded</div>
+        
+        <div class="headings"><b>cash prize</b></div>
+        <div class="text"> Winner - Rs.2000</div>
+        <div class="text"> Runner - Rs.1000</div>
+        <div class="text"> 2nd Runner up - Rs.500</div>
+        
+        
+        <div class="headings"><b>Event coordinator</b> </div>
+        <div class="text"> Tarun Krishna : <a href="tel:7299305802">7299305802</a></div>
+        
+        
+        
+    </div>
+        
+        
+        
+    </div>
+
+
+
+{% endblock %}

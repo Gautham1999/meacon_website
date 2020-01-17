@@ -1,0 +1,55 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'app.js' %}"></script>
+<body>
+    <div id="video-container">
+    <video autoplay  muted loop  class="video">
+        <source src="{% static 'img/backvideo.mp4' %}" type="video/mp4">
+        </video>
+        
+        
+ 
+    <div class="contents">
+ <!-- TRIATHALON -->        
+        
+        <div class="eventname"> triathalon </div> 
+
+        
+        <div class="quote"> An exciting non technical event with fun filled games </div>
+                    
+        <div class="headings"><b> Round -1 (ping tac toe)</b> </div>
+        
+        <div class="text"> The specified task given must be performed within minimum time.<br> One from the team had to do the activity.<br>Teams which take the least time will be selected for the next round </div>
+        
+        <div class="headings"><b> Round -2 (Stable masters)</b> </div>
+        
+        <div class="text"> The team must balance the given property for the given time. <br> The team which holds the property for maximum time will be selected for last round </div>
+        
+        <div class="headings"><b> Round -3 (Frog across the pond)</b> </div>
+        
+        <div class="text"> In this round the energy level of the finalized teams has been considered and then awarded </div>
+        
+        <div class="headings"><b>cash prize</b></div>
+        <div class="text"> Winner - Rs.1000</div>
+        <div class="text"> Runner - Rs.750</div>
+        <div class="text"> 2nd Runner up - Rs.500</div>
+        
+        
+        
+        <p class="quote"> " Hury up to hang out yourself for this enthusiastic event "</p>
+        
+        
+        
+        <div class="headings"><b>Event coordinator</b> </div>
+        <div class="text"> Mugunthan : <a href="tel:9849505129">9849505129</a></div>
+        
+        
+        
+    </div>
+        
+        
+        
+    </div>
+
+{% endblock %}
